@@ -1,0 +1,16 @@
+{
+  "name": "wechatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node mybot.js export WECHATY_PUPPET=wechaty-puppet-puppeteer"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "file-box": "^0.8.27",
+    "qrcode-terminal": "^0.12.0",
+    "wechaty": "^0.26.1"
+  }
+}
