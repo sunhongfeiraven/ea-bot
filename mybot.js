@@ -10,7 +10,7 @@ const bot = new Wechaty({ name: 'ea-bot' });
 
 const handleScan = (qrcode, status) => {
   qrTerm.generate(qrcode, { small: true }); // show qrcode on console
-  console.log(`${qrcode}\n[${status}] Scan QR Code in above url to login: `);
+  console.log(`https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrcode)}`);
 };
 
 const handleLogin = user => {
